@@ -1,0 +1,616 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* supaya padding ga memperbesar ukuran */
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+    position: fixed;
+    display:flex;
+    width: 100%;
+    height: 70px;
+    background-color: #164058;
+    color: white;
+    padding: 10px 50px;
+    z-index: 1;
+    /* visibility: hidden; */
+}
+/* .navbar h2{
+    font-size: 1.5em;
+    padding-top: 6px;
+    margin-left: 20px;
+} */
+.navbar ul{
+    display: flex;
+    margin-left: 550px;
+    padding-top: 14px;
+    list-style-type: none;
+}
+.navbar ul li a{
+    font-weight: bold;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 100px;
+    height: 40px;
+    
+}
+.navbar ul li a:hover{
+    font-weight: bold;
+    color: #f6b51b;
+}
+
+.textHome{
+    color: black;
+    height: 150px;
+    width: 800px;
+    position: absolute;
+    display: flex;
+    margin-top: 100px;
+}
+.textHome2{
+    width: 600px;
+    margin-left: 50px;
+    margin-top: -50px;
+    padding: 5px;
+}
+.textHome2 h1{
+    margin-top: 120px;
+    color:#164058;
+    font-size: 5em;
+    text-align: left;
+}
+.textHome2 p{
+    margin-left: 5px;
+    margin-top: 5px;
+    color: #164058;
+}
+
+/* H1 */  
+h1{
+    padding-top: 15px;
+    font-size: 3em;
+    text-align: center;
+}
+
+/* CARDS */
+.cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 50px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.cards .card{
+    width: 24%;
+    height: 310px;
+    background-color: #164058;
+    /* border: 3px solid #164058; */
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.cards .card h3{
+  color:white;
+}
+.cards .card img{
+    width: 150px;
+    height: 150px;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+.cards .card p{
+    color: #f6b51b;
+}
+
+/* CONTACT US */
+.blueSideBar{
+    padding-top: 50px;
+    height: 615px;/*untuk atur warna biru*/
+    width: 100%;
+    border-top: 1px solid #164058;
+}
+.blueSideBar .kiri{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top: 70px;
+    height: 100%;
+    width: 40%;
+    float: left;
+    background-color: #f6b51b;
+    padding: 130px 30px;
+}
+.blueSideBar .kiri h1{
+    padding-top: 140px;/*untuk atur tinggi rendah text sign up*/
+    color: #164058;
+}
+.blueSideBar .kanan{
+    height: 100%;
+    width: 60%;
+    margin-top: 48px;
+    float: right;
+    background-color: white;
+    padding: 50px ;
+}
+
+.services{
+  margin-left: 700px;
+}
+
+.services .cards .card {
+  width: 45%;
+  height: 310px;
+  background-color: #164058;
+  /* border: 3px solid #164058; */
+  border-radius: 8px;
+  margin-left: 10px;
+  padding: 20px 20px;
+  text-align: center;
+}
+.blueSideBar .kanan input{
+    height: 30px;
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border: 1px solid #164058;
+    border-radius: 5px;
+}
+.blueSideBar .kanan .btn{
+    margin-top: 15px;
+    float: right;
+    width: 100px;
+    height: 40px;
+    background-color: #164058;
+    color: white;
+    border: 1px solid #164058;
+    border-radius: 5px;
+}
+.blueSideBar .kanan .btn:hover{
+    background-color: whitesmoke;
+    color: #164058;
+    transition: 0.3s;
+}
+
+.container {
+  background-color: whitesmoke;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width:378px;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+/* FOOTER */
+.footer{
+  height: 50px;
+  width: 100%;
+  padding: 12px;
+  background-color: #164058;
+  color: white;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------------- */
+/* About Us */
+/* * {
+    font-family: Nunito, sans-serif;
+  }
+   */
+  .text-blk {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    line-height: 25px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+  
+  .responsive-cell-block {
+    min-height: 75px;
+  }
+  
+  .responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    justify-content: flex-start;
+  }
+  
+  .responsive-container-block.bigContainer {
+    padding-top: 90px;
+    padding-right: 50px;
+    padding-bottom: 0px;
+    padding-left: 50px;
+    /* margin-top: 50px; */
+    margin-right: 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
+  
+  .responsive-container-block.Container {
+    max-width: 1320px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+  }
+  
+  .mainImg {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  .imgContainer {
+    position: relative;
+    width: 30%;
+  }
+  
+  .responsive-container-block.textSide {
+    width: 48%;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+  
+  .text-blk.heading {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+  
+  .text-blk.subHeading {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+  
+  .cardImgContainer {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: rgb(229, 229, 229);
+    border-right-color: rgb(229, 229, 229);
+    border-bottom-color: rgb(229, 229, 229);
+    border-left-color: rgb(229, 229, 229);
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+  
+  .responsive-cell-block.wk-desk-6{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-right: 300px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+  }
+  
+  .text-blk.cardHeading {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+  }
+  
+  .text-blk.cardSubHeading {
+    color: rgb(153, 153, 153);
+    line-height: 22px;
+  }
+
+  .text-blk.cardHeading img{
+    width: 15px;
+    height: 17,5px;
+  }
+  .explore {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: white;
+    background-color: #164058;
+    box-shadow: rgba(244, 152, 146, 0.25) 0px 10px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-style: initial;
+    border-right-style: initial;
+    border-bottom-style: initial;
+    border-left-style: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    padding-top: 17px;
+    padding-right: 40px;
+    padding-bottom: 17px;
+    padding-left: 40px;
+  }
+  
+  .explore:hover {
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: #164058;
+    color: #f6b51b;
+    transition: 0.5s;
+  
+  }
+
+  /*  */
+  .container{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+.container .forms{
+    display: flex;
+    align-items: center;
+    height: 440px;
+    width: 200%;
+    transition: height 0.2s ease;
+}
+
+
+.container .form{
+    width: 50%;
+    padding: 30px;
+    background-color: #fff;
+    transition: margin-left 0.18s ease;
+}
+
+.container.active .login{
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+
+.container .signup{
+    opacity: 0;
+    transition: opacity 0.09s ease;
+}
+.container.active .signup{
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.container.active .forms{
+    height: 600px;
+}
+.container .form .title{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.form .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #4070f4;
+    border-radius: 25px;
+}
+
+.form .input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid){
+    border-bottom-color: #4070f4;
+}
+
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ i{
+    color: #4070f4;
+}
+
+.input-field i.icon{
+    left: 0;
+}
+.input-field i.showHidePw{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.form .checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input{
+    margin-right: 10px;
+    accent-color: #4070f4;
+}
+
+.form .text{
+    color: #333;
+    font-size: 14px;
+}
+
+.form a.text{
+    color: #4070f4;
+    text-decoration: none;
+}
+.form a:hover{
+    text-decoration: underline;
+}
+
+.form .button{
+    margin-top: 35px;
+}
+
+.form .button input{
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover{
+    background-color: #265df2;
+}
+
+.form .login-signup{
+    margin-top: 30px;
+    text-align: center;
+}
